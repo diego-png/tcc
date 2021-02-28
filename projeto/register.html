@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Street Art</title>
+
+  <!-- Fontes personalizadas para este modelo-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Estilos personalizados para este modelo-->
+  <link href="compiler/sb-admin-2.css" rel="stylesheet">
+</head>
+
+<body class="bg-gradient-primary">
+
+  <div class="container">
+
+    <div class="row justify-content-center">
+
+    <div class="col-xl-6 col-lg-6 col-md-9">
+
+    <div class="card o-hidden border-0 shadow-lg my-5">
+      <div class="card-body p-0">
+        <!-- Nested Row within Card Body -->
+        <div class="row">
+          <!-- 1 parte -->
+          <div class="col-lg-12">
+            <div class="p-5">
+              <div class="text-center">
+                <h1 class="h4 text-gray-900 mb-4">Crie a sua conta aqui!</h1>
+              </div>
+              <form class="user needs-validation" method="POST" action="dados.php">
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <input type="text" name="nome" class="form-control form-control-user" placeholder="Primeiro nome" required>
+                  </div>
+                  <div class="col-sm-6">
+                    <input type="text" name="sobrenome" class="form-control form-control-user" placeholder="Último nome" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="text" name="artistico" class="form-control form-control-user" placeholder="Nome Artístico" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" name="email" class="form-control form-control-user" placeholder="Endereço de e-mail" required>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <input type="password" name="senha" class="form-control form-control-user"  placeholder="Senha" required>
+                  </div>
+                  <div class="col-sm-6">
+                    <input type="password" class="form-control form-control-user" placeholder="Repetir Senha" required>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                      <label for="validationServer03">Data de Nascimento</label>
+                    <input type="date" name="data_nasc" class="form-control form-control-user" required>
+                  </div>
+                  <div class="col-sm-6">
+                      <label for="validationServer03">Celular</label>
+                    <input type="tel" name="tel" pattern="[0-9]{2}-[0-9]{9}" class="form-control form-control-user" placeholder="11-9XXXXXXXX" required>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0 text-center">
+                    <input type="radio" name="sexo" value="Homem" checked> Homem<br>
+                   </div>
+                   <div class="col-sm-6 text-center">
+                      <input type="radio" name="sexo" value="Mulher"> Mulher<br>
+                   </div>
+                  </div>
+                  
+                 <div class="text-center">
+                    <h1 class="h4 text-gray-900 mb-4">Seu Endereço</h1>
+                </div>
+                    <div class="form-group row">
+                    <div class="col-sm-12 mb-3 mb-sm-0">
+                        <input type="text" name="rua" class="form-control form-control-user" id="validationServer03" placeholder="Rua onde você mora" required>
+                      </div>
+                    </div>
+                      <div class="form-group row">
+                        <div class="col-sm-6 mb-3 mb-sm-0 text-center">
+                          <input type="number" name="num_casa"class="form-control-user" id="validationServer04" placeholder="Número da Casa" required>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" name="complemento" class="form-control form-control-user" id="validationServer05" placeholder="Complemento">
+                          </div>
+                      </div>
+                        <div class="form-group row">
+                          <div class="col-sm-6 mb-3 mb-sm-0 text-center">
+                            <input type="number" name="cep" class="form-control-user" id="validationServer06" placeholder="CEP" required>
+                          </div>
+                          <div class="col-sm-6 text-center">
+                              <select name="estado" class="form-control-user" id="exampleFormControlSelect1">
+                              <option value="AC">AC</option>
+                              <option value="AL">AL</option>
+                              <option value="AP">AP</option>
+                              <option value="AM">AM</option>
+                              <option value="BA">BA</option>
+                              <option value="CE">CE</option>
+                              <option value="DF">DF</option>
+                              <option value="ES">ES</option>
+                              <option value="GO">GO</option>
+                              <option value="MA">MA</option>
+                              <option value="MT">MT</option>
+                              <option value="MS">MS</option>
+                              <option value="MG">MG</option>
+                              <option value="PA">PA</option>
+                              <option value="PB">PB</option>
+                              <option value="PR">PR</option>
+                              <option value="PE">PE</option>
+                              <option value="PI">PI</option>
+                              <option value="RJ">RJ</option>
+                              <option value="RN">RN</option>
+                              <option value="RS">RS</option>
+                              <option value="RO">RO</option>
+                              <option value="RR">RR</option>
+                              <option value="SC">SC</option>
+                              <option value="SP">SP</option>
+                              <option value="SE">SE</option>
+                              <option value="TO">TO</option>
+                              </select>
+                          </div>
+                        </div>
+                        <button class="btn btn-primary btn-user btn-block" type="submit">Registra Conta</button>
+              </form>
+              <hr>
+              <div class="text-center">
+                <a class="small" href="password.html">Esqueceu a senha?</a>
+              </div>
+              <div class="text-center">
+                <a class="small" href="login.html">Já tem uma conta? Entrar!</a>
+              </div>
+
+            </div>
+          </div>
+            
+            
+        </div>
+      </div>
+    </div>
+
+    </div>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+</body>
+
+</html>

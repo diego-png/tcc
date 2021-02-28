@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Street Art</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="compiler/sb-admin-2.css" rel="stylesheet">
+  <style type="text/css">
+  .imgResposiva{
+    max-width: 100%;
+    width: 900px;
+    height: 400px;
+  }
+  </style>
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- começo do menu lateral -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- configuração do menu -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-icon rotate-n-15">
+          <i class="fas"><img src="street.png"></i>
+        </div>
+        <div class="sidebar-brand-text mx-3"><!-- colocar texto--><sup><!-- texto na parte superio --></sup></div>
+      </a>
+
+      <!-- item de pintura -->
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">
+          <i class="fas"><img src="pintura.png"></i>
+          <span>Pinturas</span></a>
+      </li>
+      <!-- item de Música -->
+      <li class="nav-item ">
+        <a class="nav-link" href="index.html">
+          <i class="fas"><img src="musica.png"></i>
+          <span>Músicos</span></a>
+      </li>
+      <!-- item de Teatro -->
+      <li class="nav-item ">
+        <a class="nav-link" href="index.html">
+          <i class="fas"><img src="teatro.png"></i>
+          <span>Teatros</span></a>
+      </li>
+      <!-- item de Danças -->
+      <li class="nav-item ">
+        <a class="nav-link" href="index.html">
+          <i class="fas"><img src="danca.png"></i>
+          <span>Danças</span></a>
+      </li>
+      <!-- item de Danças -->
+      <li class="nav-item ">
+        <a class="nav-link" href="index.html">
+          <i class="fas"><img src="literatura.png"></i>
+          <span>Literaturas</span></a>
+      </li>
+      <!-- item de Danças -->
+      <li class="nav-item ">
+        <a class="nav-link" href="index.html">
+          <i class="fas"><img src="escultura.png"></i>
+          <span>Escuturas</span></a>
+      </li>
+
+      <!-- item de Fotografias -->
+      <li class="nav-item ">
+        <a class="nav-link" href="index.html">
+          <i class="fas"><img src="fotografia.png"></i>
+          <span>Fotografias</span></a>
+      </li>
+
+      <!-- item de Quadrinhos -->
+      <li class="nav-item ">
+        <a class="nav-link" href="index.html">
+          <i class="fas"><img src="quadrinhos.png"></i>
+          <span>Quadrinhos</span></a>
+      </li>
+
+      <!-- item de Quadrinhos -->
+      <li class="nav-item ">
+        <a class="nav-link" href="index.html">
+          <i class="fas"><img src="cinema.png"></i>
+          <span>Cinemas</span></a>
+      </li>
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+    </ul>
+    <!-- fim do menu lateral -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+          <!-- Sidebar Toggle (Topbar) -->
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <!-- Topbar Search -->
+          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+            <div class="input-group">
+              <input type="text" class="form-control bg-light border-0 small" placeholder="Pesquisar por..." aria-label="Search" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="button">
+                  <i class="fas fa-search fa-sm"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+
+            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+            <li class="nav-item dropdown no-arrow d-sm-none">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
+              </a>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                <form class="form-inline mr-auto w-100 navbar-search">
+                  <div class="input-group">
+                    <input type="text" class="form-control bg-light border-0 small" placeholder="Pesquisar por..." aria-label="Search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="button">
+                        <i class="fas fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+
+            <div class="topbar-divider d-none d-sm-block"></div>
+
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Thiago Gomes</span>
+                <img class="img-profile rounded-circle" src="street art.png">
+              </a>
+              <!-- Dropdown - User Information -->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="perfil.html">
+                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Perfil
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="index.html" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Sair
+                </a>
+              </div>
+            </li>
+
+          </ul>
+
+        </nav>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Titulo da Página -->
+          <div class="align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800 text-center">Perfil</h1>
+          </div>
+          <div class="row">
+            <div class="col-xl-4 col-md-6 mb-4">
+            <div class="card shadow mb-4">
+              <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary  text-center">Dados Pessoais</h6>
+              </div>
+              <div class="card-body">
+                <img src="graf2.jpg" class="img-fluid rounded-circle" alt="Responsive image">
+                
+                <form>
+                  <div class="form-row">
+                    <div class="col-md-12 mb-3">
+                      <label for="validationServer01">Primeiro Nome</label>
+                      <input type="text" class="form-control" id="validationServer01" placeholder="Primeiro Nome" value="Thiago" required>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                      <label for="validationServer02">Sobrenome</label>
+                      <input type="text" class="form-control" id="validationServer02" placeholder="Sobrenome" value="Gomes" required>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                      <label for="validationServerUsername">Nome Artístico</label>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                        </div>
+                        <input type="text" class="form-control" id="validationServerUsername"  aria-describedby="inputGroupPrepend3" required>
+                      </div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                      <label for="validationServer01">Senha</label>
+                      <input type="text" class="form-control" id="validationServer01" placeholder="Senha" required>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-md-12 mb-3">
+                      <label for="validationServer03">Rua</label>
+                      <input type="text" class="form-control" id="validationServer03" placeholder="Rua onde você mora" required>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                      <label for="validationServer04">Número da Casa</label>
+                      <input type="number" class="form-control" id="validationServer04" required>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <label for="validationServer05">Complemento</label>
+                        <input type="text" class="form-control" id="validationServer05">
+                      </div>
+                    <div class="col-md-12 mb-3">
+                      <label for="validationServer06">CEP</label>
+                      <input type="number" class="form-control" id="validationServer06" required>
+                    </div>
+                    <label for="exampleFormControlSelect1">Estado</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                    <option>AC</option>
+                    <option>AL</option>
+                    <option>AP</option>
+                    <option>AM</option>
+                    <option>BA</option>
+                    <option>CE</option>
+                    <option>DF</option>
+                    <option>ES</option>
+                    <option>GO</option>
+                    <option>MA</option>
+                    <option>MT</option>
+                    <option>MS</option>
+                    <option>MG</option>
+                    <option>PA</option>
+                    <option>PB</option>
+                    <option>PR</option>
+                    <option>PE</option>
+                    <option>PI</option>
+                    <option>RJ</option>
+                    <option>RN</option>
+                    <option>RS</option>
+                    <option>RO</option>
+                    <option>RR</option>
+                    <option>SC</option>
+                    <option>SP</option>
+                    <option>SE</option>
+                    <option>TO</option>
+                    </select>
+                    <div class="col-md-12 mb-3">
+                        <label for="validationServer08">Celular</label>
+                      <input type="tel" pattern="[0-9]{2}-[0-9]{9}" class="form-control form-control-user" placeholder="11-999999999" required>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary" type="submit">Atualizar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-8 col-md-6 mb-4">
+            <div class="card shadow mb-4">
+              <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary  text-center">Postagens</h6>
+              </div>
+              <form class="text-center">
+                <div class="card-body">
+                <img src="rua.jpg" class="imgResposiva" alt="Responsive image">
+                <br><br>
+                <input type="file" name="perfil">
+                </div>
+                <div class="col-xl-12 col-md-12 mb-4">
+                <label for="validationTextarea">Descrição da Postagem</label>
+                <textarea class="form-control" maxlength="255" id="validationTextarea" placeholder="Por favor não esqueça de descrever seu trabalho para outros. No máximo 255 caracteres" required></textarea>
+                <div class="invalid-feedback">
+                  Por favor descreva algo sobre a Postagem.
+                </div>
+                <div class="form-group">
+                <label for="exampleFormControlSelect1">Categoria</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                <option selected disabled>Selecionar...</option>
+                <option>Pinturas</option>
+                <option>Músicas</option>
+                <option>Teatros</option>
+                <option>Danças</option>
+                <option>Literaturas</option>
+                <option>Escuturas</option>
+                <option>Fotografias</option>
+                <option>Quadrinhos</option>
+                <option>Cinemas</option>
+                </select>
+                </div>
+                </div>
+                <button class="btn btn-primary" type="submit">Posta</button>
+                <br><br>
+            </form>
+          </div>
+          </div>
+          
+
+        </div>
+
+          
+        </div>
+          
+          
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-dark">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto text-white">
+            <span>Copyright &copy; Street Art 2019</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Sair Mensagem de Alerta-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Deseja sair mesmo?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Selecione "Sair" abaixo se você estiver pronto para encerrar sua sessão atual.</div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+          <a class="btn btn-primary" href="index.html">Sair</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Bootstrap core JavaScript-->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Core plugin JavaScript-->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for all pages-->
+<script src="js/sb-admin-2.min.js"></script>
+
+<!-- Page level plugins -->
+<script src="vendor/chart.js/Chart.min.js"></script>
+
+<!-- Page level custom scripts -->
+<script src="js/demo/chart-area-demo.js"></script>
+<script src="js/demo/chart-pie-demo.js"></script>
+
+</body>
+
+</html>
